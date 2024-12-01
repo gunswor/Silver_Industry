@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "silverindustry",
+	"version": "${version}",
+	"name": "Silverindustry",
+	"description": "这是由一个初中生设计的模组!",
+	"authors": [
+		"XiaoQu!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/silverindustry/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.gunswor.silverindustry.Silverindustry"
+		],
+		"fabric-datagen": [
+			"com.gunswor.silverindustry.SilverindustryDataGenerator"
+		],
+		"client": [
+			"com.gunswor.silverindustry.SilverindustryClient"
+		]
+	},
+	"mixins": [
+		"silverindustry.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
